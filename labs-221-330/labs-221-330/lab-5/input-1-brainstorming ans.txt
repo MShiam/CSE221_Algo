@@ -1,0 +1,1 @@
+we can not use bfs for finding out shortest path because it is a weighted graph,where distance is the cost

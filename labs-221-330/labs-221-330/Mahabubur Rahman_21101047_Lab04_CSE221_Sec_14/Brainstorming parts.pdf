@@ -1,0 +1,22 @@
+1-b-(a)
+If it was an undirected graph then in the adjacency list(basically a dictionary i made where parent is the key and all children are saved in a list which is the value of that particular key)
+would be change.Then the values which i considered as children will not be children anymore and i will also have to consider them as the parent,and make connection from both side.
+such as for a,b,c
+(a:[b],b:[c],b[a],c[b]}
+
+1-b-(b)
+No,we can not represent it by adjacency matrix
+
+
+
+
+
+4-a
+Yes i can find out if a given graph is tree or not.
+Trees are-
+1.undirected graph ,acyclic meaning there is no cycle and they must have to be connected
+2.If a graph is connected and has n-1 edges ,n=vertices,then it is a tree
+
+4-b
+yes,if we run DFS on the graph to generate a depth first tree that is made up of tree edges and backedges,we can use it to find odd length cycles easily by looking at the difference in height of all nodes connected through backedges.
+By looking at all the backedges, we are looking at all the cycles. If one of them forms an odd length cycle by the definition above, then the graph contains an odd length cycle. If none of them form an odd length cycle, then the graph does not contain a cycle of odd length.
